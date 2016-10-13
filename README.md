@@ -1,6 +1,6 @@
-# DataAnalysis
+# Weather Data Analysis
 
-Analyse data from 168 weather stations in USA to find Pearsons Correlation between the Average temperatures,total precipitaion and the Corn Yield.
+Analyze data from 168 weather stations in USA to find Pearson's Correlation between the average max and min temperatures,total precipitation and the Corn Yield.
 
 Weather Data Description
 ------------------------
@@ -19,15 +19,15 @@ Yield Data Description
 
 The yld_data folder has a single file, US_corn_grain_yield.txt, containing a table of the total harvested corn grain yield in the United States measured in 1000s of megatons for the years 1985 - 2014.
 
-To calculate the avergae maximum temperature, average minimum temperature and total precipitation for each year for all weather stations and the Pearson correlation between these variables and the grain yield data stored in US_corn_grain_yield.txt run analysis.py.
+To calculate the average maximum temperature, average minimum temperature and total precipitation for each year for all weather stations and the Pearson correlation between these variables and the grain yield data stored in US_corn_grain_yield.txt run analysis.py.
 
-    $./analysis.py <operation to be performed> <input dir> <path to output file for average temperatures and total precipitation> <path to corn yiled data> <path to output file for pearsons correlations>
+    $./analysis.py <operation to be performed> <input dir> <path to output file for average temperatures and total precipitation> <path to corn yiled data> <path to output file for pearson correlations>
 ex:
 
     $ ./analysis.py avg-corr wx_data "output/AveragesOut.out yld_data/US_corn_grain_yield.txt output/Correlation.out
-To plot  the data and visualize linear regression for the average temperatures or the precipitation and the corn yield run analysis.py with additional arguments.The graph also displays the corresponsing Pearsons Correlation Co-efficient(r)
+To plot  the data and visualize linear regression for the average temperatures or the precipitation and the corn yield run analysis.py with additional arguments.The graph also displays the corresponding Pearson Correlation Co-efficient(r)
      
-    $./analysis.py <operation to be performed> <input dir> <path to output file for average temperatures and total precipitation> <path to corn yiled data> <path to output file for pearsons correlations> <weather station code> <variable for x-axis> <variable for y-axis> 
+    $./analysis.py <operation to be performed> <input dir> <path to output file for average temperatures and total precipitation> <path to corn yiled data> <path to output file for pearson correlations> <weather station code> <variable for x-axis> <variable for y-axis> 
 ex:
 
     $ ./analysis.py avg-corr wx_data "output/AveragesOut.out yld_data/US_corn_grain_yield.txt output/Correlation.out USC00111280 Total_Prcp Yield
