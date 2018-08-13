@@ -1,0 +1,11 @@
+Loading Input Data
+Pivoting on PART_NO 
+Concatenating ARTICLE_CD data with Pivoted PART_NO 
+Performing Groupby on ARTICLE_CD and max on PART_X
+Writing result to data/output/out.csv
+Loading Input Data
+Loading Input Data
+Pivoting on PART_NO 
+Concatenating ARTICLE_CD data with Pivoted PART_NO 
+Performing Groupby on ARTICLE_CD and max on PART_X
+Writing result to data/output/out.csv
